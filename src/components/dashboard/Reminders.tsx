@@ -1,4 +1,4 @@
-import { MdOutlineVideocam } from 'react-icons/md';
+import { IoVideocam } from 'react-icons/io5';
 
 const Reminders = () => {
     return (
@@ -9,8 +9,8 @@ const Reminders = () => {
                 <p className="text-sm text-gray-500 mb-6">Time : 02.00 pm - 04.00 pm</p>
             </div>
 
-            <button className="  w-full py-3 bg-linear-to-r  from-brand-green to-brand-green-light  hover:from-brand-green-light  hover:to-brand-green  text-white  rounded-xl  font-medium  transition-all  duration-300  flex items-center justify-center gap-2  shadow-sm">
-                <MdOutlineVideocam className="text-xl" />
+            <button className="  w-full py-4 bg-linear-to-r  from-brand-green to-brand-green-light  hover:from-brand-green-light  hover:to-brand-green  text-white  rounded-full font-medium  transition-all  duration-300  flex items-center justify-center gap-2  shadow-sm">
+                <IoVideocam className="text-xl" />
                 <span>Start Meeting</span>
             </button>
         </div>
