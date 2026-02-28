@@ -11,6 +11,7 @@ type AnalyticsProps = {
 
 const ProjectAnalytics = ({ analytics }: AnalyticsProps) => {
     const list = analytics ?? [];
+    console.log(list);
 
     // Mock data for the bar chart
     const data = [
