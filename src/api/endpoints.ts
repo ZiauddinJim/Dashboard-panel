@@ -1,5 +1,5 @@
 export const endpoints = {
-  login: "api/login",
+  login: "/api/login",
   overview: "/api/overview",
   users: "/api/users",
   user: "/api/users/:id",
