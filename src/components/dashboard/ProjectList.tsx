@@ -15,7 +15,7 @@ const ProjectList = ({ products }: projectListProps) => {
 
 
     return (
-        <div className="col-span-12 lg:col-span-3 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col h-full min-h-[400px]">
+        <div className="col-span-12 lg:col-span-3 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col h-full min-h-100]">
             <div className="flex justify-between items-center mb-6">
                 <h3 className="text-lg font-bold text-gray-900">Project</h3>
                 <button className="px-3 py-1.5 border border-gray-200 text-gray-600 rounded-lg text-xs font-semibold hover:bg-gray-50 transition-colors flex items-center gap-1 shadow-sm">
@@ -35,7 +35,7 @@ const ProjectList = ({ products }: projectListProps) => {
                             key={item.id}
                             className="flex items-center gap-4 group cursor-pointer p-2 -mx-2 rounded-xl hover:bg-gray-50 transition-colors"
                         >
-                            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 group-hover:bg-white group-hover:shadow-sm border border-transparent group-hover:border-gray-200 transition-all">
+                            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center shrink-0 group-hover:bg-white group-hover:shadow-sm border border-transparent group-hover:border-gray-200 transition-all">
                                 <img
                                     src={iconUrl}
                                     alt="icon"
