@@ -25,10 +25,10 @@ const DashboardPage = () => {
                     <p className="text-gray-500 text-sm">Plan, prioritize, and accomplish your tasks with ease.</p>
                 </div>
                 <div className="flex gap-3">
-                    <button className="px-5 py-2.5 bg-brand-green hover:bg-brand-green-light active:bg-brand-green-dark text-white text-sm font-medium rounded-xl shadow-sm transition-colors flex items-center justify-center gap-2">
+                    <button className="px-5 py-3 bg-linear-to-r  from-brand-green to-brand-green-light  hover:from-brand-green-light  hover:to-brand-green  text-white cursor-pointer font-medium rounded-full shadow-sm transition-colors flex items-center justify-center gap-2">
                         <span className="text-lg leading-none">+</span> Add Project
                     </button>
-                    <button className="px-5 py-2.5 bg-white border border-gray-200 text-gray-700 hover:text-brand-green text-sm font-medium rounded-xl shadow-sm transition-colors flex justify-center items-center">
+                    <button className="px-5 py-3 bg-white border-2 border-brand-green hover:text-brand-green text-brand-green cursor-pointer font-medium rounded-full shadow-sm transition-colors flex justify-center items-center">
                         Import Data
                     </button>
                 </div>
