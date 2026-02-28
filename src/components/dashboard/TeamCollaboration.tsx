@@ -27,7 +27,7 @@ const TeamCollaboration = ({ users }: UserListProps) => {
         <div className="col-span-12 lg:col-span-5 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col">
             <div className="flex justify-between items-center mb-6">
                 <h3 className="text-lg font-bold text-gray-900">Team Collaboration</h3>
-                <button className="px-3 py-2 border-2 border-brand-green text-brand-green rounded-full font-semibold hover:bg-gray-50 transition-colors flex items-center gap-1 shadow-sm">
+                <button className="px-3 py-2 border-2 border-brand-green text-brand-green rounded-full font-semibold hover:bg-gray-100 cursor-pointer transition-colors flex items-center gap-1 shadow-sm">
                     <span>+</span> Add Member
                 </button>
             </div>

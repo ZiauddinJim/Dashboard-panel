@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# Task Octarnal Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, production-grade project management and analytics dashboard built with React 19, TypeScript, and Tailwind CSS 4.
 
-Currently, two official plugins are available:
+## 🚀 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Task Octarnal is a high-performance dashboard application designed for team collaboration and project tracking. This dashboard application, I focused on applying TypeScript effectively within a scalable React architecture using React Router and Tailwind CSS.
 
-## React Compiler
+Working on this project strengthened my understanding of type safety, component structuring, API integration, and protected routing with token-based authentication. It also improved my confidence in building responsive, production-ready frontend applications using modern development practices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- **Secure Authentication**: Persistent login sessions with protected routes.
+- **Dynamic Dashboard**: Real-time analytics, project statistics, and team collaboration tracking.
+- **Modern Tech Stack**: Leverages the latest features of React 19 and Tailwind CSS 4.
+- **Optimized Data Fetching**: Efficient server-state management with TanStack Query.
+- **Responsive Design**: Fully adaptable layout for desktop and mobile devices.
+- **Production Ready**: Configured for Vercel deployment with comprehensive linting and type-safety.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite 7](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Routing**: [React Router 7](https://reactrouter.com/)
+- **Data Fetching**: [TanStack Query v5](https://tanstack.com/query/latest)
+- **API Client**: [Axios](https://axios-http.com/)
+- **State Management**: React Context API
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── api/          # API services and Axios configuration
+├── app/          # Core setup: Providers and Routing
+│   ├── providers/ # Context providers (Auth, Query)
+│   └── routes/    # Route definitions and PrivateRoute
+├── components/   # Reusable UI & Feature components
+│   ├── dashboard/ # Dashboard-specific components
+│   └── layout/    # Layout wrappers (Sidebar, Header)
+├── hooks/        # Custom React hooks
+├── pages/        # Page-level components
+└── assets/       # Static assets (images, icons)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏁 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (Latest LTS recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ZiauddinJim/Dashboard-panel
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
 ```
+
+## 📜 Available Scripts
+
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Compiles TypeScript and builds the app for production.
+- `npm run lint`: Runs ESLint to check for code quality issues.
+- `npm run preview`: Locally previews the production build.
+
+## 🚀 Deployment
+
+The project is pre-configured for deployment on **Vercel**. Simply connect your repository to Vercel, and it will automatically detect the Vite setup.
+
+---
+
+Built with ❤️ by the Task Octarnal Team.
